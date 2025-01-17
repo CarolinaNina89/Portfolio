@@ -1,0 +1,17 @@
+:root {
+  font-family: Lato, Inter, sans-serif;
+  --primaryColor: #e6dace;
+  --secondaryColor: #cab6a8;
+  --softPink: #e3c3b4;
+  --terrakotta: #b45349;
+  --salmonPink: #dc8374;
+  --softGreen: #bbbead;
+  --softWhite: #fbfbf9;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
