@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,27 +36,30 @@ function Navigation() {
           <span className="bar"></span>
         </div>
         <div className={`navi ${isMenuOpen ? "active" : ""}`}>
-          <Link
-            to="/"
-            className="nav-button"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Project Spotlight
-          </Link>
-          <Link
-            to="/"
-            className="nav-button"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            The Essence of Me
-          </Link>
-          <Link
-            to="/"
-            className="nav-button"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            My Chamber of Creativity
-          </Link>
+          <div className="naviText">
+            <Link
+              to="/"
+              className="nav-button"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Project Spotlight
+            </Link>
+            <Link
+              to="/"
+              className="nav-button"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              The Essence of Me
+            </Link>
+            <Link
+              to="/"
+              className="nav-button"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              My Chamber of Creativity
+            </Link>
+          </div>
+          <Button text="LET'S CONNECT" />
         </div>
       </div>
     </div>
